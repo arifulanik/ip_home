@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Grocery Website Design Tutorial</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap cdn  -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header ">
+
+        <a href="#" class="logo text-decoration-none"><i class="fas fa-heartbeat"></i> Covid-19 Emergency Point </a>
+
+        <nav class="navbar">
+            <a href="#home" class="text-decoration-none">home</a>
+            <a href="#categories" class="text-decoration-none">categories</a>
+            <a href="#review" class="text-decoration-none">review</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart"></div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- banner section starts  -->
+    <section class="body_banner fs-4" style="background-image: url('image/cover.jpg')">
+        <div class="container grid" style="--bs-columns: 5; --bs-gap: 5rem;">
+            <div class="row">
+                <div class="col bg-white rounded mx-4 ">
+                    <div class="iteam_wrapper  ">
+                        <div class="title ">
+                            <img src="https://corona.gov.bd/assets/new_home_assets/image/static/1.svg" alt=""
+                                class="me-3">
+                            <p>করোনার উপসর্গ ও আপনার করনীয়</p>
+                        </div>
+                        <div class="content">
+                            <ul class="mt-4">
+                                <li><a href="https://corona.gov.bd/corona-symptom"
+                                        class="text-decoration-none text-dark">সন্দেহভাজন করোনা রোগীর ক্ষেত্রে</a>
+                                </li>
+                                <li><a href="https://corona.gov.bd/corona-mild-symptom"
+                                        class="text-decoration-none text-dark">মৃদু উপসর্গের ক্ষেত্রে</a></li>
+                                <li><a href="https://corona.gov.bd/corona-medium-symptom"
+                                        class="text-decoration-none text-dark">মাঝারি উপসর্গের ক্ষেত্রে</a>
+                                </li>
+                                <li>
+                                    <a href="https://corona.gov.bd/corona-intense-symptom"
+                                        class="text-decoration-none text-dark">
+                                        তীব্র উপসর্গের ক্ষেত্রে</a>
+                                </li>
+                                <li><a href="https://corona.gov.bd/corona-post-covid-symptom"
+                                        class="text-decoration-none text-dark">পোস্ট কভিড উপসর্গের
+                                        ক্ষেত্রে</a></li>
+                                <li><a href="https://corona.gov.bd/corona-new-symptom"
+                                        class="text-decoration-none text-dark">করোনার নতুন লক্ষণ সমূহ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col bg-white rounded mx-4">
+                    <div class="iteam_wrapper">
+                        <div class="title">
+                            <img src="https://corona.gov.bd/assets/new_home_assets/image/static/2.svg" alt=""
+                                class="me-3">
+                            <p> করোনা টেস্ট ও হাসপাতালে ভর্তি সংক্রান্ত তথ্য</p>
+                        </div>
+                        <div class="content">
+                            <ul class="mt-4">
+                                <li><a href="https://corona.gov.bd/corona-hospital"
+                                        class="text-decoration-none text-dark">কোথায়
+                                        টেস্ট করানো হয়?</a></li>
+
+
+
+
+                                <li>
+                                    <a href="https://corona.gov.bd/corona-out-service"
+                                        class="text-decoration-none text-dark">
+                                        ঢাকার ও ঢাকার বাইরে টেস্ট
+                                        সার্ভিস</a>
+                                </li>
+                                <li><a href="https://corona.gov.bd/hospital-icu"
+                                        class="text-decoration-none text-dark">ঢাকার ও
+                                        ঢাকার বাইরে বেড, আইসিইউ
+                                        সার্ভিস</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bg-white rounded mx-4">
+                    <div class="iteam_wrapper">
+                        <div class="title">
+                            <img src="https://corona.gov.bd/assets/new_home_assets/image/static/3.svg" alt=""
+                                class="me-3">
+                            <p> কোভিড-১৯ সংক্রান্ত সরাসরি ডাক্তারি পরামর্শ ও তথ্য সেবা </p>
+                        </div>
+                        <div class="content">
+                            <ul class="mt-4">
+                                <li><a target="_blank" href="http://beta.corona.gov.bd/bn/group/covid-19/doctor-advice"
+                                        class="text-decoration-none text-dark">কোভিড-১৯
+                                        স্বাস্থ্যসেবা </a></li>
+                                <li><a target="_blank" href="http://beta.corona.gov.bd/bn/group/covid-19/doctor-advice"
+                                        class="text-decoration-none text-dark">সাধারণ
+                                        স্বাস্থ্যসেবা</a></li>
+                                <li><a target="_blank" href="http://beta.corona.gov.bd/bn/group/covid-19/doctor-advice"
+                                        class="text-decoration-none text-dark">মা ও শিশুর
+                                        স্বাস্থ্যসেবা</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col bg-white rounded mx-4">
+                    <div class="iteam_wrapper">
+                        <div class="title">
+                            <img src="https://corona.gov.bd/assets/new_home_assets/image/static/4.svg" alt=""
+                                class="me-3">
+                            <p> কোভিড-১৯ টীকা সংক্রান্ত তথ্য</p>
+                        </div>
+                        <div class="content">
+                            <ul class="mt-4">
+                                <li><a href="https://corona.gov.bd/corona_surokkha"
+                                        class="text-decoration-none text-dark">
+                                        নিবন্ধকরণ</a></li>
+                                <li><a target="_blank"
+                                        href="https://play.google.com/store/apps/details?id=com.codersbucket.surokkha_app"
+                                        class="text-decoration-none text-dark">অ্যাপ
+                                        ডাউনলোড</a></li>
+                                <li>
+                                    <a href="https://corona.gov.bd/corona_surokkha"
+                                        class="text-decoration-none text-dark">
+                                        ভ্যাক্সিন পরবর্তী শারীরিক জটিলতার
+                                        বিষয়ে
+                                        ডাক্তারি পরামর্শ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col bg-white rounded mx-4">
+                    <div class="iteam_wrapper">
+                        <div class="title">
+                            <img src="https://corona.gov.bd/assets/new_home_assets/image/static/5.svg" alt=""
+                                class="me-3">
+                            <p> জরুরি সহযোগীতায়</p>
+
+                        </div>
+                        <ul class="mt-4">
+                            <li><a href="https://corona.gov.bd/oxygen-services-info" class="text-decoration-none">
+                                </a><a href="https://corona.gov.bd/oxygen-services-info"
+                                    class="text-decoration-none text-dark">
+                                    অক্সিজেন সহায়তা</a>
+                            </li>
+
+                            <li>
+                                <a href="https://corona.gov.bd/ambulance-services-info"
+                                    class="text-decoration-none text-dark">
+                                    অ্যাম্বুলেন্স </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- banner section ends  -->
+
+
+    <!-- categories section starts  -->
+
+    <section class="categories" id="categories">
+
+        <h1 class="heading"> <span>Service categories</span> </h1>
+
+        <div class="box-container">
+
+            <!-- <div class="box">
+                <img src="image/cat-1.png" alt="">
+                <h3>vegitables</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">shop now</a>
+            </div> -->
+
+            <div class="box">
+                <img src="image/medicine.jfif" alt="">
+                <h3>Medicine</h3>
+                <p>upto 45% off</p>
+                <a href="medicine.html" class="btn ">Get Medicine</a>
+            </div>
+
+            <div class="box">
+                <img src="image/oxygen.jpg" alt="">
+                <h3>Oxygen</h3>
+                <p>upto 45% off</p>
+                <a href="oxygen.html" class="btn">Get Oxygen</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hospital.jpg" alt="">
+                <h3>Hospital</h3>
+                <p>upto 45% off</p>
+                <a href="hospital.html" class="btn">visit Hospital</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- categories section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> Best<span>Sellers</span> </h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-1.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est
+                        maxime ad tempore quasi tenetur.</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-2.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est
+                        maxime ad tempore quasi tenetur.</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-3.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est
+                        maxime ad tempore quasi tenetur.</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-4.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est
+                        maxime ad tempore quasi tenetur.</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> Covid-19 Emergency point <i class="fas fa-heartbeat"></i> </h3>
+                <p>Covid-19 is a world Pandemic. We are trying to help the people with our little. Be with us and make
+                    us
+                    better for the people.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +880-1630826924</a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +880-1938547222 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> ifahim1000@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Chittagong,Bangladesh</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="index.html#products" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="image/payment.png" class="payment-img" alt="">
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
